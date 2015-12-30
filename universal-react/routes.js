@@ -12,6 +12,6 @@ const routes = {
     path: '/about',
     component: AboutComponent
   }]  
-}
+};
 
 export { routes };
