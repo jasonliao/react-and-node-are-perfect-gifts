@@ -4,13 +4,14 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
 import { Provider } from 'react-redux';
-import configureStore from './javascripts/store/configureStore';
-import { routes } from './routes';
+import configureStore from './../app/store/configureStore';
+import { routes } from './../app/routes';
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/../public'));
 
+app.set('views', __dirname + '/../views');
 app.set('view engine', 'ejs');
 
 app.get('*', (req, res) => {

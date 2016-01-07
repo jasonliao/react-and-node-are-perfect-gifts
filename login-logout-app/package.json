@@ -4,7 +4,7 @@
   "description": "a simple login logout app",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server.js"
+    "start": "babel-node ./server/server.js"
   },
   "keywords": [
     "react",

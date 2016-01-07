@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router';
 import { Provider } from 'react-redux';
-import configureStore from './javascripts/store/configureStore';
+import configureStore from './store/configureStore';
 
 import { routes } from './routes';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
